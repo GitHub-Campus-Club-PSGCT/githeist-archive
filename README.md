@@ -1,14 +1,33 @@
 # githeist-archive
 
-Overview
-This repository contains the forensic evidence archive related to the TechSphere Corporation investigation. It features a collection of old backups, partial data recoveries, and corrupted digital artifacts. The files here represent some of the most challenging pieces of evidence, including partially corrupted backups that hint at the true sequence of events despite deliberate tampering.
+# Redacted Document Viewer
 
-Contents
-/bkp_old/: Old backup files recovered from the treasury system and employee terminals. Includes a heavily corrupted partial backup containing fragmented logs crucial for timeline reconstruction.
-/documents/: Corrupted financial spreadsheets with hidden formulas encoding secret keys related to the heist.
+Redacted documents can be **unredacted** using a **redaction key**. 
 
+---
 
-Tools you can use to encode:
-Hex encoding: convert ASCII text to hex representation (reverse of hex to ASCII)
-Base64 encoding: encode ASCII to Base64 string
+## How It Works
+
+1. **Download the File**
+   Save the redacted document locally.
+
+2. **Find the Redaction Key**
+   Look near the redacted section for the encrypted key (Base64-encoded hex string).
+
+3. **Decode the Redaction Key**
+
+   * **Manual**:
+
+     Convert Hex → Decimal → ASCII characters
+
+   * **Example Tool**: [CyberChef](https://gchq.github.io/CyberChef/)
+
+     * Use `From Hex` 
+
+4. **Unredact the File**
+   Enter the decoded key in the viewer to reveal the hidden content.
+
+> Decoded key works **only for one file**.
+
+---
 
